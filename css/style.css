@@ -1,0 +1,470 @@
+/* font-family satrt */
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/poppins-regular.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/poppins-bold.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+/* font-family end */
+/* common start */
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:active,
+:hover,
+:focus{
+    outline: 0;
+    outline-offset: 0;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--primary-color) !important;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+/* variable define start */
+:root{
+    --primary-color: #A82C48;
+    --secondry-color: #43121d;
+    --third-colo: #f98169;
+    --white-color: #ffffff;
+    --text-color: #555555;
+    --black-color: #000000;
+}
+/* variable define end */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    font-weight: 400;
+    color: var(--text-color);
+} */
+/* common end */
+/* custom scroll start */
+::-webkit-scrollbar{
+    width: 0.625rem !important;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white-color) !important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color) !important;
+}
+/* custom scroll end */
+/* custom h1 h2 h3 h4 h5 p btn start */
+h1{
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--secondry-color);
+}
+h2{
+    font-size: 33px;
+    font-weight: 700;
+    color: var(--secondry-color);
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+h4{
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondry-color);
+    text-transform: capitalize;
+}
+h5{
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    
+}
+.main_btn{
+    display: inline-block;
+    padding: 0.625rem 1.825rem;
+    line-height: 1.5625rem;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+.main_btn:hover{
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.white_btn{
+    display: inline-block;
+    padding: 0.625rem 1.825rem;
+    line-height: 1.5625rem;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: unset;
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+.white_btn:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.wrapper{
+    padding: 70px 0;
+}
+.text-content{
+    margin: auto;
+    width: 70%;
+}
+.counter h2,
+.testimonial h2,
+.book_foods h2{
+    color: var(--white-color);
+}
+/* custom h1 h2 h3 h4 h5 p btn end */
+/* change nave scrollber */
+.navigation_wram.scroll-on{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem rgb(0,0,0,0.09);
+    transition: all .15s ease-in-out 0s;
+}
+/* ----------------------- */
+/* progress button start */
+.totop{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--secondry-color);
+    cursor: pointer;
+    border: 4px solid var(--white-color);
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+.totop:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border: 4px solid var(--primary-color);
+}
+.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+/* progress button start */
+/* ----------------------- */
+/* ----------------------- */
+/* header start */
+.navigation_wram{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.navigation_wram .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms ease-in-out;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.color_toggle_icon{
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color);
+}
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+.navigation_wram .main_btn{
+    margin-left: 0.625rem;
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+}
+/* header end */
+/* ----------------------- */
+
+/* ----------------------- */
+/* banner top start */
+.top_banner{
+   width: 100%;
+   background: url(../image/bg/bg-1.jpg) no-repeat center;
+   background-size: cover;
+   padding: 12.875rem 0 9.375rem;
+}
+.img_banner img{
+    width: 45.6%;
+    position: absolute;
+    top: 3px ;
+    right: 0;
+}
+.br_btn{
+    border: unset;
+}
+/* banner top end */ 
+/* ----------------------- */
+/* ----------------------- */
+/* counter start */
+.counter-section{
+    padding: 2.5rem 0;
+    background-color: var(--primary-color);
+}
+.counter-section h2{
+   color: var(--white-color);
+   font-size: 40px;
+   font-weight: 700;
+}
+.counter-section span{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.counter-section p{
+    margin-right: 35px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+/* counter end*/
+/* ----------------------- */
+
+/* ----------------------- */
+/* about start*/
+/* about 1st part start */
+.about-section{
+    background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec{
+    padding: 2rem;
+}
+/* about 1st part end */
+/* about 2nd part start */
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    position: relative;
+    margin-left: 30px;
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+}
+.food-type ul li i{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* about 2nd part end*/
+/* about end*/
+/* ....................... */
+/* .......................... */
+/* story start */
+.story-section{
+    padding-top: 100px;
+    width: 100%;
+    height: 28.125rem;
+    background: url(../image/bg/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+.story-section h2{
+    color: var(--primary-color);
+}
+/* story end */
+/* explore food start */
+.Explore-food .card{
+    border: none;
+    border-radius: 0.9375rem;
+    background-color: transparent;
+}
+.Explore-food .card img{
+    border-radius: 0.9375rem;
+    margin-bottom: 0.625rem;
+    object-fit: cover;
+}
+.Explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+.Explore-food .card span del{
+    color: #a7a7a7;
+    margin-left: 0.5rem;
+}
+/* explore food end */
+/* ..................... */
+/* ........................ */
+/* testimonial start */
+.reviews-section h2{
+    color:var(--white-color);
+}
+.reviews-section{
+    padding-bottom: 100px;
+    background-color: var(--primary-color);
+}
+.reviews-section .testi-conatant{
+    position: relative;
+    padding: 70px 20px 20px 20px;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    cursor: pointer;
+}
+.reviews-section .testi-conatant i{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    left: 237px;
+    padding:0 15px;
+    border-radius: 0 0 50px 50px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    transition: all 1s ease-in-out;
+}
+.reviews-section .testi-conatant:hover i{
+    border-radius: 0;
+    background-color: var(--primary-color);
+}
+.reviews-section .testi-conatant img{
+    width: 15%;
+    margin: 10px 0;
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    bottom: -80px;
+}
+/* testimonial end */
+/* faq start */
+.FAQ h4 span{
+    color: var(--primary-color);
+    margin-right: 0,875rem;
+}
+/* faq end */
+/* ----------------- */
+/* book food start */
+.book-food{
+    width: 100%;
+    background: url("../image/bg/bg-3.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+/* book food end */
+/* form control start */
+.newsletter{
+    width: 55%;
+    margin: 0 auto;
+}
+.newsletter .form_input{
+    width: 100%;
+    height: 45px;
+    padding: 0 1.25rem;
+    border: 1px solid var(--primary-color);
+}
+.newsletter .form_input::placeholder{
+    color: var(--primary-color);
+}
+.newsletter .form_input:focus{
+    color: var(--primary-color);
+}
+/* form control end */
+/* footer start */
+footer{
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+.social_icon a i{
+    display: inline-flex;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    border-radius: 50px;
+    /* color white */
+    background-size: 100% 200%;
+    background-position: 100% 0;
+    background-image:  linear-gradient(#fff 50%, var(--primary-color) 50%);
+    color: var(--primary-color) ;
+}
+.social_icon i:hover{
+    background-image:  linear-gradient(#fff 50%, var(--primary-color) 50%);
+    color: #fff;
+    background-position: 100% 100%;
+    box-shadow: 0 0 15px var(--secondry-color);
+}
+.text-footer h5, .text-footer a{
+    color: var(--white-color);
+}
+.text-footer h5, .text-footer a:hover{
+    color: var(--white-color) !important;
+}
+/* footer end */

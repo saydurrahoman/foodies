@@ -1,0 +1,325 @@
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* header start */
+    .navigation_wram{
+        padding-bottom: 20px;
+        background-color: var(--white-color);
+    }
+    .navigation_wram #nav_foodies{
+        text-align: center;
+    }
+    .navigation_wram img{
+        width: 60% !important;
+    }
+    /* header end */
+    /* banner top start */
+   .top_banner{
+    padding: 7.875rem 0 5.375rem;
+    }
+    .top_banner h1 {
+        margin-bottom: 1rem;
+        font-size: 25px;
+    }
+    .main_btn,
+    .white_btn{
+        margin-right: 5px;
+        padding: 0.525rem 0.825rem;
+    }
+    /* banner top end */
+    /* counter start */
+    .counter-section {
+        padding: 0;
+    }
+    .counter-section h2 {
+        font-size: 25px;
+    }
+    .counter-section p {
+        margin-right: 0px;
+        margin-bottom: 0rem;
+    }
+    /* counter end */
+    /* about start */
+    .wrapper {
+        padding: 60px 0;
+    }
+    .food-type {
+        padding-top: 0.25rem;
+    }
+    .about-section .text-sec {
+        padding: 1rem;
+    }
+    .text-sec h2 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    /* about end */
+    /* food explore start */
+    .Explore-food .card {
+        margin-top: 35px;
+    }
+    /* food explore end */
+    /* story start */
+    .story-section{
+        padding-top: 45px;
+    }
+    .story-section h2 {
+        font-size: 20px;
+        line-height: 2rem;
+    } 
+    /* story end */
+    /* testimonial start */
+    .reviews-section .testi-conatant i{
+        left: 116px;
+    }
+    .reviews-section .testi-conatant img{
+        width: 40%;
+    }
+    /* testimonial end */
+    /* faq start */
+    .faq_contant{
+        text-align: center;
+    }
+    /* faq end */
+    /* book food start */
+    .book-food h1{
+        font-size: 30px;
+    }
+    /* book food end */
+    /* newsletter start */
+    .text-contant h2{
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    /* newsletter end */
+    /* form control start */
+    .newsletter{
+        width: 100%;
+    }
+    .newsletter .main_btn{
+        margin-top: 15px;
+        width: 100%;
+        
+    }
+    /* form control end */
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* header start */
+    .navigation_wram{
+        padding-bottom: 20px;
+        background-color: var(--white-color);
+    }
+    .navigation_wram #nav_foodies{
+        text-align: center;
+    }
+    .navigation_wram img{
+        width: 65% !important;
+    }
+    /* header end */
+   /* banner top start */
+   .top_banner{
+    padding: 7.875rem 0 5.375rem;
+    }
+    .top_banner h1 {
+        margin-bottom: 15rem;
+        font-size: 40px;
+    }
+    .main_btn,
+    .white_btn{
+        margin-right: 5px;
+        padding: 0.525rem 0.825rem;
+    }
+    /* banner top end */
+    /* counter start */
+    .counter-section {
+        padding: 1rem 0;
+    }
+    .counter-section h2{
+        font-size: 35px;
+    }
+    /* counter end */
+    /* about start */
+    .food-type {
+        padding-top: 0.25rem;
+    }
+    .text-sec h2 {
+        font-size: 25px;
+    }
+    /* about end */
+    /* story start */
+    .story-section h2{
+        font-size: 25px;
+    } 
+    /* story end */
+    /* food explore start */
+    .Explore-food .card {
+        margin-top: 35px;
+    }
+    /* food explore end */
+    /* food-book start */
+    .book-food-text h1{
+        font-size: 26px;
+    }
+    /* food-book end */
+    /* testimonial start */
+    .reviews-section .testi-conatant i{
+        left: 225px;
+    }
+    .reviews-section .testi-conatant img{
+        width: 25%;
+    }
+    /* testimonial end */
+    /* form control start */
+    .newsletter{
+        width: 100%;
+    }
+    .newsletter .main_btn{
+        margin-top: 15px;
+        width: 100%;
+        
+    }
+    /* form control end */
+}
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* header start */
+    .navigation_wram{
+        padding-bottom: 20px;
+        background-color: var(--white-color);
+    }
+    .navigation_wram #nav_foodies{
+        text-align: center;
+    }
+    /* header end */
+    /* banner top start */
+    .top_banner{
+        padding: 7.875rem 0 5.375rem;
+    }
+    .top_banner h1{
+        margin-bottom: 2rem;
+        font-size: 32px;
+        
+    }
+    .main_btn,
+    .white_btn{
+        margin-right: 5px;
+        padding: 0.525rem 0.825rem;
+    }
+    /* banner top end */
+    /* counter start */
+    .counter-section {
+        padding: 1rem 0;
+    }
+    .counter-section h2{
+        font-size: 35px;
+    }
+    /* counter end */
+    /* about start */
+    .food-type {
+        padding-top: 0.25rem;
+    }
+    /* about end */
+    /* food explore start */
+    .Explore-food .card {
+        margin-top: 35px;
+    }
+    /* testimonial start */
+    .reviews-section .testi-conatant i{
+        left: 140px
+    }
+    .reviews-section .testi-conatant img{
+        width: 30%;
+    }
+    /* testimonial end */
+    /* book food start */
+    .book-food h1{
+        font-size: 35px;
+    }
+    /* book food end */
+    /* newsletter start */
+    .text-contant h2{
+        font-size: 27px;
+    }
+    /* newsletter end */
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* banner top start */
+    .top_banner h1{
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+    .img_banner img{
+        width: 57.3%;
+        top: 4px;
+    }
+    /* banner top end */
+    /* about part 2nd start */
+    .about-section .text-sec{
+        padding: 1rem;
+    }
+    .text-sec h2 {
+        font-size: 31px;
+    }
+    /* about part 2nd end */
+    /* story start */
+    .story-section {
+        padding-top: 80px;
+    }
+    .text-contant h2{
+        font-size: 30px;
+    }
+    /* story end */
+    /* testimonial start */
+    .reviews-section .testi-conatant i{
+        left: 195px;
+        font-size: 35px;
+    }
+    .reviews-section .testi-conatant img {
+        width: 18%;
+    }
+    /* testimonial end */
+    /* book food start */
+    .book-food h1{
+        font-size: 35px;
+    }
+    /* book food end */
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* banner start */
+    .banner_top{
+        padding-bottom: 24.5px;
+     }
+    /* banner end */
+    /* testimonial start */
+    .reviews-section .testi-conatant img {
+        width: 18%;
+    }
+    /* testimonial end */
+}
+
+ /* Extra Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* banner start */
+    .banner_top h1{
+        font-size: 50px;
+    }
+    .img_banner img{
+        width: 40%;
+        top: 34.5px;
+    }
+    /* banner end */
+    /* testimonial start */
+    .reviews-section .testi-conatant i{
+        left: 280px;
+        font-size: 45px;
+    }
+    .reviews-section .testi-conatant img {
+        width: 18%;
+    }
+    /* testimonial end */
+}
